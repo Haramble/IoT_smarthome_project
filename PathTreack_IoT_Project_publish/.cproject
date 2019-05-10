@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.samsung.artik.cc.target.elf.debug.384699263">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.samsung.artik.cc.target.elf.debug.384699263" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<macros>
+					<stringMacro name="ARTIK_SDK_BASE" type="VALUE_PATH_DIR" value="${ARTIKSDKPathFromID:a05x-tizenrt_18.05.00}"/>
+					<stringMacro name="ARTIK_TOOLCHAIN_BASE" type="VALUE_PATH_DIR" value="${ARTIKToolchainPathFromID:arm-none-eabi-4.9-2015q3}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf tinyara.bin tinyara_head.bin &quot;${ProjName}.map&quot;" description="" id="com.samsung.artik.cc.target.elf.debug.384699263" name="Debug" parent="com.samsung.artik.cc.target.elf.debug" postbuildStep="echo &quot;Next step is to generate .bin file&quot;">
+					<folderInfo id="com.samsung.artik.cc.target.elf.debug.384699263." name="/" resourcePath="">
+						<toolChain id="com.samsung.artik.cc.target.elf.debug.toolchain.839255443" name="gcc-arm-none-eabi" superClass="com.samsung.artik.cc.target.elf.debug.toolchain">
+							<option id="com.samsung.artik.ide.build.toolchain.settings.sdkID.1264419301" superClass="com.samsung.artik.ide.build.toolchain.settings.sdkID" value="a05x-tizenrt_18.05.00" valueType="string"/>
+							<option id="com.samsung.artik.ide.build.toolchain.settings.toolchainID.275095464" superClass="com.samsung.artik.ide.build.toolchain.settings.toolchainID" value="arm-none-eabi-4.9-2015q3" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.samsung.artik.managedbuild.cross.targetPlatform.972984754" isAbstract="false" osList="all" superClass="com.samsung.artik.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/PathTrack_IoT_Project_publish}/Debug" id="com.samsung.artik.managedbuild.cross.builder.1461752836" managedBuildOn="true" name="Gnu Make Builder.Debug" superClass="com.samsung.artik.managedbuild.cross.builder"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.assembler.288065771" name="ARTIK GCC Assembler" superClass="com.samsung.artik.managedbuild.cross.tool.assembler">
+								<option id="com.samsung.artik.cc.option.assembler.usepreprocessor.827379875" superClass="com.samsung.artik.cc.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<inputType id="com.samsung.artik.managedbuild.cross.tool.assembler.input.545908361" superClass="com.samsung.artik.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.c.compiler.1904755566" name="ARTIK GCC C Compiler" superClass="com.samsung.artik.managedbuild.cross.tool.c.compiler">
+								<option id="com.samsung.artik.cc.option.optimization.functionsections.885626801" superClass="com.samsung.artik.cc.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.optimization.datasections.494926074" superClass="com.samsung.artik.cc.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.include.paths.337765133" superClass="com.samsung.artik.cc.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/include/apps"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/framework_include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/apps_include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/apps_include/netutils"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/base"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/connectivity"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/systemio"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/wifi"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/lwm2m"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/mqtt"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.optimization.level.194656017" superClass="com.samsung.artik.cc.option.optimization.level" useByScannerDiscovery="true" value="None (-O0)" valueType="enumerated"/>
+								<option id="com.samsung.artik.cc.option.optimization.nobuiltin.1813565156" superClass="com.samsung.artik.cc.option.optimization.nobuiltin" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.optimization.other.242431381" superClass="com.samsung.artik.cc.option.optimization.other" useByScannerDiscovery="true" value="-fno-strict-aliasing -fno-strength-reduce -fomit-frame-pointer" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.defs.88244281" superClass="com.samsung.artik.cc.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__TINYARA__"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.c.compiler.warning.strictprototypes.88487065" superClass="com.samsung.artik.cc.option.c.compiler.warning.strictprototypes" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.warnings.shadow.196297059" superClass="com.samsung.artik.cc.option.warnings.shadow" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.otherwarnings.1514540054" superClass="com.samsung.artik.cc.option.c.compiler.otherwarnings" useByScannerDiscovery="true" value="-Wno-implicit-function-declaration -Wno-unused-function -Wno-unused-but-set-variable" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.stacksize.2038731086" superClass="com.samsung.artik.cc.option.c.compiler.stacksize" useByScannerDiscovery="false" value="18432" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.priority.20640923" superClass="com.samsung.artik.cc.option.c.compiler.priority" useByScannerDiscovery="false" value="100" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.other.1215484521" superClass="com.samsung.artik.cc.option.c.compiler.other" useByScannerDiscovery="true" value=" -g -DCONFIG_ARTIK_IDE_INTERGRATE -mcpu=cortex-r4 -mfpu=vfpv3" valueType="string"/>
+								<inputType id="com.samsung.artik.managedbuild.cross.tool.c.compiler.input.1906501712" superClass="com.samsung.artik.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.c.linker.217535980" name="ARTIK GCC C Linker" superClass="com.samsung.artik.managedbuild.cross.tool.c.linker">
+								<option id="com.samsung.artik.cc.option.optimization.gcsections.786381417" superClass="com.samsung.artik.cc.option.optimization.gcsections" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.linker.scriptfile.1958169731" superClass="com.samsung.artik.cc.option.c.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/source/tinyara/build/configs/artik053/scripts/flash.ld"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.c.linker.paths.627032636" superClass="com.samsung.artik.cc.option.c.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/libs"/>
+									<listOptionValue builtIn="false" value="${ARTIK_TOOLCHAIN_BASE}/lib/gcc/arm-none-eabi/4.9.3"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.c.linker.other.405661649" superClass="com.samsung.artik.cc.option.c.linker.other" value="--entry=__start ${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/libs/arm_vectortab.o" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.linker.nostart.1730796861" superClass="com.samsung.artik.cc.option.c.linker.nostart" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.linker.nodeflibs.1641920" superClass="com.samsung.artik.cc.option.c.linker.nodeflibs" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.linker.libs.614952759" superClass="com.samsung.artik.cc.option.c.linker.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="apps"/>
+									<listOptionValue builtIn="false" value="arch"/>
+									<listOptionValue builtIn="false" value="artik-sdk"/>
+									<listOptionValue builtIn="false" value="audio"/>
+									<listOptionValue builtIn="false" value="board"/>
+									<listOptionValue builtIn="false" value="c"/>
+									<listOptionValue builtIn="false" value="drivers"/>
+									<listOptionValue builtIn="false" value="external"/>
+									<listOptionValue builtIn="false" value="framework"/>
+									<listOptionValue builtIn="false" value="fs"/>
+									<listOptionValue builtIn="false" value="ispdriver"/>
+									<listOptionValue builtIn="false" value="kernel"/>
+									<listOptionValue builtIn="false" value="mm"/>
+									<listOptionValue builtIn="false" value="net"/>
+									<listOptionValue builtIn="false" value="gcc"/>
+									<listOptionValue builtIn="false" value="gcov"/>
+								</option>
+								<inputType id="com.samsung.artik.managedbuild.cross.tool.c.linker.input.403643866" superClass="com.samsung.artik.managedbuild.cross.tool.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.archiver.642263820" name="ARTIK GCC Archiver" superClass="com.samsung.artik.managedbuild.cross.tool.archiver"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.createflash.1343352949" name="ARTIK GCC Create Flash Image" superClass="com.samsung.artik.managedbuild.cross.tool.createflash"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.createheadbin.1131123299" name="ARTIK GCC Create Head Bin" superClass="com.samsung.artik.managedbuild.cross.tool.createheadbin"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.createheadsign.1225772787" name="ARTIK GCC Create Head Sign" superClass="com.samsung.artik.managedbuild.cross.tool.createheadsign"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.samsung.artik.cc.target.elf.release.267347196">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.samsung.artik.cc.target.elf.release.267347196" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<macros>
+					<stringMacro name="ARTIK_SDK_BASE" type="VALUE_PATH_DIR" value="${ARTIKSDKPathFromID:a05x-tizenrt_18.05.00}"/>
+					<stringMacro name="ARTIK_TOOLCHAIN_BASE" type="VALUE_PATH_DIR" value="${ARTIKToolchainPathFromID:arm-none-eabi-4.9-2015q3}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf tinyara.bin tinyara_head.bin &quot;${ProjName}.map&quot;" description="" id="com.samsung.artik.cc.target.elf.release.267347196" name="Release" parent="com.samsung.artik.cc.target.elf.release" postbuildStep="echo &quot;Next step is to generate .bin file&quot;">
+					<folderInfo id="com.samsung.artik.cc.target.elf.release.267347196." name="/" resourcePath="">
+						<toolChain id="com.samsung.artik.cc.target.elf.release.toolchain.1465975595" name="gcc-arm-none-eabi" superClass="com.samsung.artik.cc.target.elf.release.toolchain">
+							<option id="com.samsung.artik.ide.build.toolchain.settings.sdkID.415888662" superClass="com.samsung.artik.ide.build.toolchain.settings.sdkID" value="a05x-tizenrt_18.05.00" valueType="string"/>
+							<option id="com.samsung.artik.ide.build.toolchain.settings.toolchainID.1525594029" superClass="com.samsung.artik.ide.build.toolchain.settings.toolchainID" value="arm-none-eabi-4.9-2015q3" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.samsung.artik.managedbuild.cross.targetPlatform.2133069978" isAbstract="false" osList="all" superClass="com.samsung.artik.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/PathTrack_IoT_Project_publish}/Release" id="com.samsung.artik.managedbuild.cross.builder.177800331" managedBuildOn="true" name="Gnu Make Builder.Release" superClass="com.samsung.artik.managedbuild.cross.builder"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.assembler.1042209716" name="ARTIK GCC Assembler" superClass="com.samsung.artik.managedbuild.cross.tool.assembler">
+								<option id="com.samsung.artik.cc.option.assembler.usepreprocessor.947090152" superClass="com.samsung.artik.cc.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<inputType id="com.samsung.artik.managedbuild.cross.tool.assembler.input.2053060599" superClass="com.samsung.artik.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.c.compiler.143139515" name="ARTIK GCC C Compiler" superClass="com.samsung.artik.managedbuild.cross.tool.c.compiler">
+								<option id="com.samsung.artik.cc.option.optimization.functionsections.2018121407" superClass="com.samsung.artik.cc.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.optimization.datasections.956041713" superClass="com.samsung.artik.cc.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.include.paths.967355774" superClass="com.samsung.artik.cc.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/include/apps"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/framework_include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/apps_include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/apps_include/netutils"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/base"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/connectivity"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/systemio"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/wifi"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/lwm2m"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/artik-sdk_include/mqtt"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.optimization.level.435228565" superClass="com.samsung.artik.cc.option.optimization.level" useByScannerDiscovery="true" value="Optimize more (-O2)" valueType="enumerated"/>
+								<option id="com.samsung.artik.cc.option.optimization.nobuiltin.752523305" superClass="com.samsung.artik.cc.option.optimization.nobuiltin" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.optimization.other.766188953" superClass="com.samsung.artik.cc.option.optimization.other" useByScannerDiscovery="true" value="-fno-strict-aliasing -fno-strength-reduce -fomit-frame-pointer" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.defs.690705318" superClass="com.samsung.artik.cc.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__TINYARA__"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.c.compiler.warning.strictprototypes.545135102" superClass="com.samsung.artik.cc.option.c.compiler.warning.strictprototypes" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.warnings.shadow.1115696804" superClass="com.samsung.artik.cc.option.warnings.shadow" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.otherwarnings.582986038" superClass="com.samsung.artik.cc.option.c.compiler.otherwarnings" useByScannerDiscovery="true" value="-Wno-implicit-function-declaration -Wno-unused-function -Wno-unused-but-set-variable" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.stacksize.323691302" superClass="com.samsung.artik.cc.option.c.compiler.stacksize" useByScannerDiscovery="false" value="18432" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.priority.740381236" superClass="com.samsung.artik.cc.option.c.compiler.priority" useByScannerDiscovery="false" value="100" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.compiler.other.102884354" superClass="com.samsung.artik.cc.option.c.compiler.other" useByScannerDiscovery="true" value=" -DCONFIG_ARTIK_IDE_INTERGRATE -mcpu=cortex-r4 -mfpu=vfpv3" valueType="string"/>
+								<inputType id="com.samsung.artik.managedbuild.cross.tool.c.compiler.input.670825982" superClass="com.samsung.artik.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.c.linker.1920319208" name="ARTIK GCC C Linker" superClass="com.samsung.artik.managedbuild.cross.tool.c.linker">
+								<option id="com.samsung.artik.cc.option.optimization.gcsections.74170937" superClass="com.samsung.artik.cc.option.optimization.gcsections" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.linker.scriptfile.1919440026" superClass="com.samsung.artik.cc.option.c.linker.scriptfile" valueType="stringList">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/source/tinyara/build/configs/artik053/scripts/flash.ld"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.c.linker.paths.215837769" superClass="com.samsung.artik.cc.option.c.linker.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/libs"/>
+									<listOptionValue builtIn="false" value="${ARTIK_TOOLCHAIN_BASE}/lib/gcc/arm-none-eabi/4.9.3"/>
+								</option>
+								<option id="com.samsung.artik.cc.option.c.linker.other.1308918932" superClass="com.samsung.artik.cc.option.c.linker.other" value="--entry=__start ${ARTIK_SDK_BASE}/libsdk/${ARTIK_PRE_CONFIGURATION}/libs/arm_vectortab.o" valueType="string"/>
+								<option id="com.samsung.artik.cc.option.c.linker.nostart.953880470" superClass="com.samsung.artik.cc.option.c.linker.nostart" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.linker.nodeflibs.403030416" superClass="com.samsung.artik.cc.option.c.linker.nodeflibs" value="true" valueType="boolean"/>
+								<option id="com.samsung.artik.cc.option.c.linker.libs.1832115170" superClass="com.samsung.artik.cc.option.c.linker.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="apps"/>
+									<listOptionValue builtIn="false" value="arch"/>
+									<listOptionValue builtIn="false" value="artik-sdk"/>
+									<listOptionValue builtIn="false" value="audio"/>
+									<listOptionValue builtIn="false" value="board"/>
+									<listOptionValue builtIn="false" value="c"/>
+									<listOptionValue builtIn="false" value="drivers"/>
+									<listOptionValue builtIn="false" value="external"/>
+									<listOptionValue builtIn="false" value="framework"/>
+									<listOptionValue builtIn="false" value="fs"/>
+									<listOptionValue builtIn="false" value="ispdriver"/>
+									<listOptionValue builtIn="false" value="kernel"/>
+									<listOptionValue builtIn="false" value="mm"/>
+									<listOptionValue builtIn="false" value="net"/>
+									<listOptionValue builtIn="false" value="gcc"/>
+									<listOptionValue builtIn="false" value="gcov"/>
+								</option>
+								<inputType id="com.samsung.artik.managedbuild.cross.tool.c.linker.input.1201774399" superClass="com.samsung.artik.managedbuild.cross.tool.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.archiver.966444781" name="ARTIK GCC Archiver" superClass="com.samsung.artik.managedbuild.cross.tool.archiver"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.createflash.794588779" name="ARTIK GCC Create Flash Image" superClass="com.samsung.artik.managedbuild.cross.tool.createflash"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.createheadbin.861012674" name="ARTIK GCC Create Head Bin" superClass="com.samsung.artik.managedbuild.cross.tool.createheadbin"/>
+							<tool id="com.samsung.artik.managedbuild.cross.tool.createheadsign.1146461187" name="ARTIK GCC Create Head Sign" superClass="com.samsung.artik.managedbuild.cross.tool.createheadsign"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="PathTrack_IoT_Project_publish.com.samsung.artik.cc.target.elf.99464395" name="Executable" projectType="com.samsung.artik.cc.target.elf"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.samsung.artik.cc.target.elf.release.267347196;com.samsung.artik.cc.target.elf.release.267347196.;com.samsung.artik.managedbuild.cross.tool.c.compiler.143139515;com.samsung.artik.managedbuild.cross.tool.c.compiler.input.670825982">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.samsung.artik.cc.target.elf.release.785846095;com.samsung.artik.cc.target.elf.release.785846095.;com.samsung.artik.managedbuild.cross.tool.c.compiler.1924373331;com.samsung.artik.managedbuild.cross.tool.c.compiler.input.490087256">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.samsung.artik.cc.target.elf.debug.1457903812;com.samsung.artik.cc.target.elf.debug.1457903812.;com.samsung.artik.managedbuild.cross.tool.c.compiler.2021962441;com.samsung.artik.managedbuild.cross.tool.c.compiler.input.1898896649">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.samsung.artik.cc.target.elf.debug.384699263;com.samsung.artik.cc.target.elf.debug.384699263.;com.samsung.artik.managedbuild.cross.tool.c.compiler.1904755566;com.samsung.artik.managedbuild.cross.tool.c.compiler.input.1906501712">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>
