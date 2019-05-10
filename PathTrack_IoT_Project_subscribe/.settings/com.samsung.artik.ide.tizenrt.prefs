@@ -1,0 +1,5 @@
+ARTIK_PRE_CONFIGURATION=A053/extra
+eclipse.preferences.version=1
+project.tizenrt.priority=100
+project.tizenrt.stacksize=18432
+project.toolchain.id=arm-none-eabi-4.9-2015q3
